@@ -6,8 +6,6 @@ This repository contains the research code supporting the paper **[AI-Enhanced O
 
 The project investigates whether neural networks can provide fast, accurate nodal-voltage predictions from smart-meter measurements, reducing reliance on detailed network models for real-time low-voltage-grid monitoring.
 
-![Predicted versus actual voltage](figures/prediction-vs-actual.png)
-
 ## Research context
 
 Growing residential photovoltaic (PV) penetration can cause voltage rise and phase imbalance in low-voltage (LV) distribution networks. Conventional AC optimal power flow (OPF) requires accurate topology and electrical parameters that are not always available in real-world LV systems.
@@ -21,7 +19,25 @@ This work uses smart-meter and transformer measurements to predict customer noda
 - The shallow neural-network baseline achieved **0.041 V test RMSE** on the baseline dataset, outperforming the Random Forest comparison.
 - Transfer learning adapted pre-trained representations to unseen operating/network conditions, with reported RMSE values of **0.10 V**, **1.29 V**, and **3.35 V** across the evaluated target datasets; a tuned two-hidden-layer model reached **0.39 V** in the most extreme case.
 
-![Voltage-prediction example](figures/voltage-prediction-example.png)
+## Selected visual results
+
+### Transfer learning under the most challenging operating condition
+
+The tuned two-hidden-layer neural network closely follows the measured voltage profile on the high-variance `new data 3` scenario.
+
+![Transfer learning on NN2, new data 3](figures/download-2.png)
+
+### Accurate prediction on Paper-2-style test data
+
+The predicted and measured voltage traces closely overlap, illustrating the neural network's predictive accuracy on the Paper-2-style test scenario.
+
+![Paper-2-style neural-network prediction](figures/image.png)
+
+### Architecture-depth comparison
+
+This experiment compares training and test RMSE with training time across neural-network depths, supporting the model-architecture selection process.
+
+![Effect of network depth on performance and training time](figures/download.png)
 
 ## Repository contents
 

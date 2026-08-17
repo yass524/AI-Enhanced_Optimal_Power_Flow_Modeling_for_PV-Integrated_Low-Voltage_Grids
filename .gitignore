@@ -1,0 +1,16 @@
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local datasets and generated research artifacts
+*.csv
+*.h5
+*.keras
+
+# Keep only the curated README figures under version control
+*.png
+!figures/
+!figures/*.png

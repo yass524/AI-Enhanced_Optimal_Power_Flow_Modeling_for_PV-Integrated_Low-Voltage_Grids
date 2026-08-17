@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated IEEE conference paper."
+title: "AI-Enhanced Optimal Power Flow Modeling for PV-Integrated Low-Voltage Grids"
+authors:
+  - family-names: Saad
+    given-names: Yassin
+  - family-names: Elsherif
+    given-names: Salma
+  - family-names: Zaghloul
+    given-names: Yasmine
+preferred-citation:
+  type: conference-paper
+  title: "AI-Enhanced Optimal Power Flow Modeling for PV-Integrated Low-Voltage Grids"
+  authors:
+    - family-names: Saad
+      given-names: Yassin
+    - family-names: Elsherif
+      given-names: Salma
+    - family-names: Zaghloul
+      given-names: Yasmine
+  conference: "2026 8th Global Power, Energy and Communication Conference (GPECOM)"
+  year: 2026
+  doi: 10.1109/GPECOM70462.2026.11578896
